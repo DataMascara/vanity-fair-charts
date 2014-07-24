@@ -61,3 +61,5 @@ for song in songs:
     
     lyrics = [] # clear it after each file
 
+# ------
+# Credits to @jiko's example https://gist.github.com/jiko/7305816
