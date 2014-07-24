@@ -9,7 +9,7 @@ lyricsfile = "lyrics/2013-tom-ford-lyrics.txt"
 
 def openFile(lyricsfile, data=[]):
     with open(lyricsfile, 'rb') as textfile:
-        stripped = (row.strip() for row in textfile if not row.startswith(('[')))
+        stripped = (row for row in textfile if not row.startswith(('[')))
         data = [row for row in stripped if not len(row) == 0]
     return data
 
@@ -24,15 +24,11 @@ def tokenize(lines):
 def writeFile(fdist):
 	outputname = "frequencies/2013-tom-ford-lyrics.txt"
 	with codecs.open(outputname, 'w', 'utf-8') as l:
-		[l.write(word+"\n") for word in fdist]
+		[l.write(word + "\t\t\t" + str(fdist[word]) + "\n") for word in fdist]
 
 lines = openFile(lyricsfile) 
 fdist = tokenize(lines)
 
 print "Distribution before normalization of stop words\n", fdist, "\n"
 writeFile(fdist)
-
-
-
-		
 
