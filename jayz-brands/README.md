@@ -2,7 +2,7 @@ Objective
 ---
 
 We're going to recreate this chart: 
-![](http://www.vanityfair.com/hollywood/2013/10/jay-z-brands-song-chart/.i.0.jay-z-brands-chart.jpg)
+![](original.jpg)
 
 This was first published by Vanity Fair in October 2013. ([source](http://www.vanityfair.com/hollywood/2013/10/jay-z-brands-song-chart))
 
