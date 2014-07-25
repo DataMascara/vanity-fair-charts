@@ -4,6 +4,7 @@
 import nltk
 import re
 import codecs
+import glob
 
 
 brands = ["Mercedes Benz", "Cristal", "Lexus", "Maybach", "BMW", "Gucci", "Glock", "Bentley", "Nike",
@@ -36,23 +37,26 @@ def tokenize(lines, normalize=False):
 	return fdist
 
 def writeFile(fdist, outputname):
-	with codecs.open(outputname, 'w', 'utf-8') as l:
+	with codecs.open(outputname, 'w') as l:
 		[l.write(word + "\t\t\t" + str(fdist[word]) + "\n") for word in fdist]
 
 
+for song in glob.glob('lyrics/*.txt'):
+    if "album-art" not in song:
 
+	    lines = openFile(song)
 
-lyricsfile = "lyrics/2013-tom-ford-lyrics.txt"
-lines = openFile(lyricsfile) 
-fdist = tokenize(lines, False)
+	    print str(len(lines)) + " lines read from " + song
 
-print "Distribution before normalization of stop words\n", fdist, " ", str(len(fdist)), "\n"
-writeFile(fdist, "frequencies/2013-tom-ford-lyrics.txt")
+	    fdist = tokenize(lines, False)
+	    print "Distribution before normalization of stop words: ", str(len(fdist))
+	    output = song.replace("lyrics", "frequencies")
+	    writeFile(fdist, output)
 
-fdistN = tokenize(lines, True)
-
-print "Distribution after normalization of stop words\n", fdistN, " ", str(len(fdistN))
-writeFile(fdistN, "frequencies/2013-tom-ford-lyrics-normalized.txt")
+	    fdistN = tokenize(lines, True)
+	    print "Distribution after normalization of stop words: ", str(len(fdistN)), "\n"
+	    output = song.replace("lyrics", "frequencies-normalized")
+	    writeFile(fdistN, output)
 
 
 
