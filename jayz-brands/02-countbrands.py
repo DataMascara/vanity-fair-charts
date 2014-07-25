@@ -63,12 +63,12 @@ for song in glob.glob('lyrics/*.txt'):
 
         fdist = tokenize(lines, False)
         print "Distribution before normalization of stop words: ", str(len(fdist))
-        output = song.replace("lyrics", "frequencies")
+        output = song.replace("lyrics/", "frequencies/")
         writeFile(fdist, output)
 
         fdistN = tokenize(lines, True)
         print "Distribution after normalization of stop words: ", str(len(fdistN)), "\n"
-        output = song.replace("lyrics", "frequencies-normalized")
+        output = song.replace("lyrics/", "frequencies-normalized/")
         writeFile(fdistN, output)
 
 
