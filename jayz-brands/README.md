@@ -13,6 +13,7 @@ Steps Involved
 	- Output:  A directory named 'lyrics' that contains text files. Each file will be named with year then title. For example, `2007-Hello-Brooklyn.txt`.
 2. **Data analysis** - Tokenize words and count each mention of a brand name. This should be 1 python file that reads the lyric text files and outputs a comma separated file described below.
 	- Output: A comma separated file (CSV) that contains three columns: year, brand, frequency.
+	- Resources: [Natural Language Processing with Python](http://www.nltk.org/book/) Book
 3. **Data Visualization** - Plot data as a two-axis chart. A script that reads the CSV file and outputs a two axis chart. 
 	- Output: an image file with the chart correctly annotated.
 
