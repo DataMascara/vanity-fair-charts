@@ -4,7 +4,7 @@ Objective
 We're going to recreate this chart: 
 ![](original.jpg)
 
-This was first published by Vanity Fair in October 2013. ([source](http://www.vanityfair.com/hollywood/2013/10/jay-z-brands-song-chart))
+**Source:** This was first published by Vanity Fair in October 2013. ([source](http://www.vanityfair.com/hollywood/2013/10/jay-z-brands-song-chart))
 
 Steps Involved
 ---
@@ -22,6 +22,6 @@ Python Libraries
 
 Setup: [@katychuang](http://github.com/katychuang) prepared a requirements.txt file that you can use to install needed libraries with pip. To use this, create a virtual environment and run `pip install -r requirements.txt`.
 
-
+Note: In order to run the tokenizing script, you'll need to download the stop words copora from NLTK. You can do that with this command `python -c "import nltk; nltk.download()"`
 
 
