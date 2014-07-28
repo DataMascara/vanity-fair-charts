@@ -51,30 +51,32 @@ def songLyrics(year, page):
     song_links.extend((a['href'] for a in html.select(".song_list li a")))
      
     songs = list(set(song_links))
-    lyrics = []
+
     for song in songs:
+        lyrics = [] # start with empty list
         
-        # make a request to grab each page linked to
-        page = requests.get(root+song)
-        outputname = "lyrics/" + year + song[6:] + ".txt"
-        print outputname
+        if "album-art" not in song:
+            # make a request to grab each page linked to
+            page = requests.get(root+song)
+            outputname = "lyrics/" + year + song[6:] + ".txt"
+            print outputname
 
-        html = BeautifulSoup(page.text)
-        # the div with the content we want has the class "lyrics"
-        lines = html.select(".lyrics")
-        pebble = []
-        
-        for line in lines:
-            [a.unwrap() for a in line.select("a")]
-            [br.unwrap() for br in line.select("br")]
-            pebble.append(line)
+            html = BeautifulSoup(page.text)
+            # the div with the content we want has the class "lyrics"
+            lines = html.select(".lyrics")
+            pebble = []
+            
+            for line in lines:
+                [a.unwrap() for a in line.select("a")]
+                [br.unwrap() for br in line.select("br")]
+                pebble.append(line)
 
-        lyrics.extend(pebble) # save it all into lyrics list
+            lyrics.extend(pebble) # save it all into lyrics list
+            
+            with codecs.open(outputname, 'w', 'utf-8') as l:
+              [l.write(lyric.get_text()) for lyric in lyrics]
+            
         
-        with codecs.open(outputname, 'w', 'utf-8') as l:
-          [l.write(lyric.get_text()) for lyric in lyrics]
-        
-        lyrics = [] # clear it after each file
 
 # go through list of albums and grab page
 for album in albums:
