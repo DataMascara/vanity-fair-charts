@@ -68,9 +68,7 @@ def writeFile(fdist, outputname):
 
 for song in glob.glob('lyrics/*.txt'):
     lines = openFile(song)
-    x = tally(lines, song)
-    output = "count.txt"
-    writeFile(x, output)
+    tally(lines, song)
 
 for song in glob.glob('lyrics/*.txt'):
     if "album-art" not in song:
