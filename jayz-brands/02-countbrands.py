@@ -31,6 +31,11 @@ def openFile(lyricsfile, data=[]):
 
 def tokenize(lines, normalize=False):
     str1 = ''.join(lines)
+    for product in brands:
+        # print product, ":", str1.count(product)
+        if str1.count(product) > 1:
+            print "{}:{}\t{}".format(product, str1.count(product), song)
+
     tokens = nltk.word_tokenize(str1) # tokenizes the raw string
     text = nltk.Text(tokens)          # generate the text object
 
