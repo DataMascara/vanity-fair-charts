@@ -29,12 +29,20 @@ def openFile(lyricsfile, data=[]):
         data = [row for row in stripped if not len(row) == 0]
     return data
 
-def tokenize(lines, normalize=False):
+def tally(lines, song=""):
     str1 = ''.join(lines)
+
+    tally = {}
+
     for product in brands:
-        # print product, ":", str1.count(product)
         if str1.count(product) > 1:
-            print "{}:{}\t{}".format(product, str1.count(product), song)
+            tally[product]=str1.count(product)
+            print "{}\t  {}x\t{}".format(product.strip(), str1.count(product), " ".join(song[7:-11].split("-")))
+
+    return tally
+
+def tokenize(lines, normalize=False, song=""):
+    str1 = ''.join(lines)
 
     tokens = nltk.word_tokenize(str1) # tokenizes the raw string
     text = nltk.Text(tokens)          # generate the text object
@@ -58,6 +66,11 @@ def writeFile(fdist, outputname):
     with codecs.open(outputname, 'w') as l:
         [l.write(word + "\t\t\t" + str(fdist[word]) + "\n") for word in fdist]
 
+for song in glob.glob('lyrics/*.txt'):
+    lines = openFile(song)
+    x = tally(lines, song)
+    output = "count.txt"
+    writeFile(x, output)
 
 for song in glob.glob('lyrics/*.txt'):
     if "album-art" not in song:
