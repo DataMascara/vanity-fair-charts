@@ -33,5 +33,7 @@ In order to run the tokenizing script, you'll need to download the stop words co
 Reference
 ---
 
+* Karteek Addanki and Dekai Wu. 2013. Unsupervised rhyme scheme identification in hip hop lyrics using hidden markov models. In Proceedings of the First international conference on Statistical Language and Speech Processing (SLSP'13), Adrian-Horia Dediu, Carlos Martín-Vide, Ruslan Mitkov, and Bianca Truthe (Eds.). Springer-Verlag, Berlin, Heidelberg, 39-50. DOI=10.1007/978-3-642-39593-2_3 http://dx.doi.org/10.1007/978-3-642-39593-2_3 [PDF](http://www.cs.ust.hk/~dekai/library/WU_Dekai/AddankiWu_Slsp2013.pdf) [ACM Library](http://dl.acm.org/citation.cfm?id=2530107)
 * Matt Garley and Julia Hockenmaier. 2012. Beefmoves: dissemination, diversity, and dynamics of English borrowings in a German hip hop forum. In *Proceedings of the 50th Annual Meeting of the Association for Computational Linguistics: Short Papers - Volume 2* (ACL '12), Vol. 2. Association for Computational Linguistics, Stroudsburg, PA, USA, 135-139. [PDF](http://www.aclweb.org/anthology/P12-2027) [ACM Library](http://dl.acm.org/citation.cfm?id=2390699) 
+* David Torres, Douglas Turnbull, Luke Barrington Gert Lanckriet. 2007. Identifying Words that are Musically Meaningful. In *ISMIR* Vol. 7, pp. 405-410. Chicago [PDF](http://cseweb.ucsd.edu/~datorres/bibs/MusicVocab_ISMIR07.pdf)
 
