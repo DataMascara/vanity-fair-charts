@@ -43,10 +43,14 @@ Reports
 
 * [Product Mentions in Rap Music](http://www.uic.edu/orgs/kbc/hiphop/mentions.htm). (2003).
 
-New Articles
+News Articles
 ---
 
+* Stephen Armstrong. 2005. ['I'm drinkin' it - they payin' me for it'](http://www.theguardian.com/media/2005/jul/11/mondaymediasection.advertising). The Guardian.
+* Susan Chandler. 2006. [Cristal unrapped: Or how most luxury-class products have learned to stop worrying and love the endorsement](http://articles.chicagotribune.com/2006-07-02/news/0607020255_1_hip-hop-artists-polaroid-cadillac). Chicago Tribune.
 * Maya Grinberg. [Gold Diggers & Playa Haters: Mixed Responses to Hip Hop Marketing](http://cf.rims.org/Magazine/PrintTemplate.cfm?AID=3287)
 * Gil Kaufman. 2003. [Push The Courvoisier: Are Rappers Paid For Product Placement?](http://www.mtv.com/news/1472393/push-the-courvoisier-are-rappers-paid-for-product-placement/)
+* David Kiley. 2005. [Hip Hop Gets Down with the Deals](http://www.businessweek.com/stories/2005-05-15/hip-hop-gets-down-with-the-deals). Bloomberg Business Week. 
+* David. A. Love. 2011. [Maybach's fall and the limits of rap product placement](http://thegrio.com/2011/11/30/does-hip-hop-product-placement-make-a-difference/). 
 * Natalie Robehmed. [The Lyrical Portfolios Of Hip-Hop's Wealthiest Artists](http://www.forbes.com/sites/natalierobehmed/2014/04/16/the-lyrical-portfolios-of-hip-hops-wealthiest-artists/)
 
