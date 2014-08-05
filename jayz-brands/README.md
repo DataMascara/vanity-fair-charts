@@ -30,10 +30,23 @@ Python Libraries
 In order to run the tokenizing script, you'll need to download the stop words copora from NLTK. You can do that with this command `python -c "import nltk; nltk.download()"`
 
 
-Reference
+Bibliography
 ---
 
 * Karteek Addanki and Dekai Wu. 2013. Unsupervised rhyme scheme identification in hip hop lyrics using hidden markov models. In Proceedings of the First international conference on Statistical Language and Speech Processing (SLSP'13), Adrian-Horia Dediu, Carlos Martín-Vide, Ruslan Mitkov, and Bianca Truthe (Eds.). Springer-Verlag, Berlin, Heidelberg, 39-50. DOI=10.1007/978-3-642-39593-2_3 http://dx.doi.org/10.1007/978-3-642-39593-2_3 [PDF](http://www.cs.ust.hk/~dekai/library/WU_Dekai/AddankiWu_Slsp2013.pdf) [ACM Library](http://dl.acm.org/citation.cfm?id=2530107)
-* Matt Garley and Julia Hockenmaier. 2012. Beefmoves: dissemination, diversity, and dynamics of English borrowings in a German hip hop forum. In *Proceedings of the 50th Annual Meeting of the Association for Computational Linguistics: Short Papers - Volume 2* (ACL '12), Vol. 2. Association for Computational Linguistics, Stroudsburg, PA, USA, 135-139. [PDF](http://www.aclweb.org/anthology/P12-2027) [ACM Library](http://dl.acm.org/citation.cfm?id=2390699) 
+* Nakeisha Shannell Ferguson. 2008. [Bling-bling brand placements : measuring the effectiveness of brand mentions in hip-hop music](http://repositories.lib.utexas.edu/handle/2152/17959). Dissertation. UT Austin.
+* Matt Garley and Julia Hockenmaier. 2012. Beefmoves: dissemination, diversity, and dynamics of English borrowings in a German hip hop forum. In *Proceedings of the 50th Annual Meeting of the Association for Computational Linguistics: Short Papers - Volume 2* (ACL '12), Vol. 2. Association for Computational Linguistics, Stroudsburg, PA, USA, 135-139. [PDF](http://www.aclweb.org/anthology/P12-2027) [ACM Library](http://dl.acm.org/citation.cfm?id=2390699)
 * David Torres, Douglas Turnbull, Luke Barrington Gert Lanckriet. 2007. Identifying Words that are Musically Meaningful. In *ISMIR* Vol. 7, pp. 405-410. Chicago [PDF](http://cseweb.ucsd.edu/~datorres/bibs/MusicVocab_ISMIR07.pdf)
+
+Reports
+---
+
+* [Product Mentions in Rap Music](http://www.uic.edu/orgs/kbc/hiphop/mentions.htm). (2003).
+
+New Articles
+---
+
+* Maya Grinberg. [Gold Diggers & Playa Haters: Mixed Responses to Hip Hop Marketing](http://cf.rims.org/Magazine/PrintTemplate.cfm?AID=3287)
+* Gil Kaufman. 2003. [Push The Courvoisier: Are Rappers Paid For Product Placement?](http://www.mtv.com/news/1472393/push-the-courvoisier-are-rappers-paid-for-product-placement/)
+* Natalie Robehmed. [The Lyrical Portfolios Of Hip-Hop's Wealthiest Artists](http://www.forbes.com/sites/natalierobehmed/2014/04/16/the-lyrical-portfolios-of-hip-hops-wealthiest-artists/)
 
