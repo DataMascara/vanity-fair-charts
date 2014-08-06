@@ -37,7 +37,8 @@ def tally(lines, song=""):
     for product in brands:
         if str1.count(product) > 1:
             tally[product]=str1.count(product)
-            print "{}\t  {}x\t{}".format(product.strip(), str1.count(product), " ".join(song[7:-11].split("-")))
+            print "{}\t  {}x\t{}".format(product.strip(), str1.count(product), 
+                                " ".join(song[7:-11].split("-")))
 
     return tally
 
