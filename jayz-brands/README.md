@@ -33,18 +33,18 @@ In order to run the tokenizing script, you'll need to download the stop words co
 Bibliography
 ---
 
+## Research Papers
+
 * Karteek Addanki and Dekai Wu. 2013. Unsupervised rhyme scheme identification in hip hop lyrics using hidden markov models. In Proceedings of the First international conference on Statistical Language and Speech Processing (SLSP'13), Adrian-Horia Dediu, Carlos Martín-Vide, Ruslan Mitkov, and Bianca Truthe (Eds.). Springer-Verlag, Berlin, Heidelberg, 39-50. DOI=10.1007/978-3-642-39593-2_3 http://dx.doi.org/10.1007/978-3-642-39593-2_3 [PDF](http://www.cs.ust.hk/~dekai/library/WU_Dekai/AddankiWu_Slsp2013.pdf) [ACM Library](http://dl.acm.org/citation.cfm?id=2530107)
 * Nakeisha Shannell Ferguson. 2008. [Bling-bling brand placements : measuring the effectiveness of brand mentions in hip-hop music](http://repositories.lib.utexas.edu/handle/2152/17959). Dissertation. UT Austin.
 * Matt Garley and Julia Hockenmaier. 2012. Beefmoves: dissemination, diversity, and dynamics of English borrowings in a German hip hop forum. In *Proceedings of the 50th Annual Meeting of the Association for Computational Linguistics: Short Papers - Volume 2* (ACL '12), Vol. 2. Association for Computational Linguistics, Stroudsburg, PA, USA, 135-139. [PDF](http://www.aclweb.org/anthology/P12-2027) [ACM Library](http://dl.acm.org/citation.cfm?id=2390699)
 * David Torres, Douglas Turnbull, Luke Barrington Gert Lanckriet. 2007. Identifying Words that are Musically Meaningful. In *ISMIR* Vol. 7, pp. 405-410. Chicago [PDF](http://cseweb.ucsd.edu/~datorres/bibs/MusicVocab_ISMIR07.pdf)
 
-Reports
----
+## Reports
 
 * [Product Mentions in Rap Music](http://www.uic.edu/orgs/kbc/hiphop/mentions.htm). (2003).
 
-News Articles
----
+## News Articles
 
 * Stephen Armstrong. 2005. ['I'm drinkin' it - they payin' me for it'](http://www.theguardian.com/media/2005/jul/11/mondaymediasection.advertising). The Guardian.
 * Susan Chandler. 2006. [Cristal unrapped: Or how most luxury-class products have learned to stop worrying and love the endorsement](http://articles.chicagotribune.com/2006-07-02/news/0607020255_1_hip-hop-artists-polaroid-cadillac). Chicago Tribune.
@@ -54,3 +54,6 @@ News Articles
 * David. A. Love. 2011. [Maybach's fall and the limits of rap product placement](http://thegrio.com/2011/11/30/does-hip-hop-product-placement-make-a-difference/). 
 * Natalie Robehmed. [The Lyrical Portfolios Of Hip-Hop's Wealthiest Artists](http://www.forbes.com/sites/natalierobehmed/2014/04/16/the-lyrical-portfolios-of-hip-hops-wealthiest-artists/)
 
+## Blog Posts
+
+* Benjamin Zimmer. 2006. [The Dissing of Hiphop Linguistics](http://itre.cis.upenn.edu/~myl/languagelog/archives/002792.html)
