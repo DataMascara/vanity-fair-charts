@@ -22,6 +22,7 @@ __status__ = "Development"
 
 brands = ["Mercedes Benz", "Cristal", "Lexus", "Maybach", "BMW", "Gucci", "Glock", "Bentley", "Nike",
 "Range Rover", "Rolex", "Porsche", "Versace", "Tom Ford", "Intratec"]
+# Brands identified by Vanity Fair
 
 def openFile(lyricsfile, data=[]):
     with open(lyricsfile, 'rb') as textfile:
@@ -54,7 +55,8 @@ def tokenize(lines, normalize=False, song=""):
         from nltk.corpus import stopwords
 
         stopwords = stopwords.words("english")
-        more_stopwords = ["", "ass", ",", "fuck", "nigga", "niggas", "oh", "i", "'s"]
+        more_stopwords = ["", "ass", ",", "fuck", "nigga", "niggas", "oh", "i", "'s", "bitches", "(", ")", ",", "i", "?",
+        "!"]
 
         sw = more_stopwords + stopwords
 
@@ -65,7 +67,8 @@ def tokenize(lines, normalize=False, song=""):
 
 def writeFile(fdist, outputname):
     with codecs.open(outputname, 'w') as l:
-        [l.write(word + "\t\t\t" + str(fdist[word]) + "\n") for word in fdist]
+        [l.write(word + "\t" + str(fdist[word]) + "\n") for word in fdist]
+
 
 for song in glob.glob('lyrics/*.txt'):
     lines = openFile(song)
