@@ -8,7 +8,7 @@ import nltk
 import re
 import codecs
 import glob
-
+import csv
 
 __author__ = "Kat Chuang @katychuang"
 __copyright__ = "Copyright 2014"
@@ -23,6 +23,8 @@ __status__ = "Development"
 brands = ["Mercedes Benz", "Cristal", "Lexus", "Maybach", "BMW", "Gucci", "Glock", "Bentley", "Nike",
 "Range Rover", "Rolex", "Porsche", "Versace", "Tom Ford", "Intratec"]
 # Brands identified by Vanity Fair
+csvOutput=[]
+
 
 def openFile(lyricsfile, data=[]):
     with open(lyricsfile, 'rb') as textfile:
@@ -65,14 +67,20 @@ def tokenize(lines, normalize=False, song=""):
     fdist = nltk.FreqDist(clean_text)
     return fdist
 
-def writeFile(fdist, outputname):
+def writeFile(fdist, outputname, year, title):
     with codecs.open(outputname, 'w') as l:
-        [l.write(word + "\t" + str(fdist[word]) + "\n") for word in fdist]
+        for word in fdist:
+            temp = []
+            if word in brands:
+                l.write(word + "\t" + str(fdist[word]) + "\n") 
 
-
-for song in glob.glob('lyrics/*.txt'):
-    lines = openFile(song)
-    tally(lines, song)
+                temp.append(year)
+                temp.append(title)
+                temp.append(word)
+                temp.append(fdist[word])
+                
+                if len(temp)>0: 
+                    csvOutput.append(temp)
 
 for song in glob.glob('lyrics/*.txt'):
     if "album-art" not in song:
@@ -82,14 +90,19 @@ for song in glob.glob('lyrics/*.txt'):
         print str(len(lines)) + " lines read from " + song
 
         fdist = tokenize(lines, False)
-        print "Distribution before normalization of stop words: ", str(len(fdist))
+        # print "Distribution before normalization of stop words: ", str(len(fdist))
         output = song.replace("lyrics/", "frequencies/")
-        writeFile(fdist, output)
+        writeFile(fdist, output, song[7:11], " ".join(song[12:-4].split("-")))
 
         fdistN = tokenize(lines, True)
-        print "Distribution after normalization of stop words: ", str(len(fdistN)), "\n"
+        # print "Distribution after normalization of stop words: ", str(len(fdistN)), "\n"
         output = song.replace("lyrics/", "frequencies-normalized/")
-        writeFile(fdistN, output)
+        writeFile(fdistN, output, song[7:11], " ".join(song[12:-4].split("-")))
+
+with open('frequencies.csv', 'wb') as csvfile:
+    w = csv.writer(csvfile, delimiter=',')
+    w.writerow(["year", "title", "brand", "mentions"])
+    w.writerows(csvOutput)
 
 
 # x = fdist.tabulate(samples=range(10), cumulative=True)
