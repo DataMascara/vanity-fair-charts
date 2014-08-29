@@ -2,7 +2,18 @@ Vanity fair shared reports of Pantone's color of the year. In their articles the
 
 Question: Do consumers' purchases fall align with the color of the year?
 
-Pantone's URL: `wwww.pantone.com/coy<yyyy>`
+Notes:
+
+* Pantone's URL: `wwww.pantone.com/coy<yyyy>`
+* [Historical colors](http://pantone.wikia.com/wiki/Category:Color_of_the_Year)
+
+Bibliography:
+
+* A. Boogert, 1692. Traité des couleurs servant à la peinture à l’eau. ([Link](http://www.thisiscolossal.com/2014/05/color-book/))
+* Eiseman & Cutler, 2014. Pantone on Fashion: A Century of Color in Design 
+* Eiseman & Recker, 2011. Pantone: The Twentieth Century in Color
+* Gage, 1999. Color and Meaning: Art, Science, and Symbolism
+* Linford, 2004. The Complete Guide to Digital Color: Creative Use of Color in the Digital Arts
 
 ## 2014: Radiant Orchid
 
