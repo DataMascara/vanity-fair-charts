@@ -20,8 +20,13 @@ var MyContent = React.createClass({
 		<ul>
 		<li>
 		<a href="http://datamascara.quora.com/Charting-Most-Mentioned-Brands-in-Jay-Zs-songs-with-Python-part-1">
-		Setting up the environment	
+		Charting Most Mentioned Brands in Jay-Z's songs with Python, part 1: Setting up the development environment and tallying word occurrences	
 		</a>
+		</li>
+		<li>
+		  <a href="https://github.com/DataMascara/vanity-fair-charts/tree/master/jayz-brands">
+			Code
+		  </a>
 		</li>
 		</ul>
 	    </p>
