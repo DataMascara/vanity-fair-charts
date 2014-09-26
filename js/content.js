@@ -13,16 +13,18 @@ var MyContent = React.createClass({
                 {desc}
             </p>
             <h2>
-               Luxury brands mentioned in Jay-Z's songs 
+               <a href="jayz-brands/">
+                Luxury brands mentioned in Jay-Z's songs
+               </a>
             </h2>
             <p>
-		
+
             </p>
 	    <h2>
 	       Popular Baby Names
 	    </h2>
 	    <p>
-	
+
 	    </p>
 	    <h2>
 		Color of the Year
